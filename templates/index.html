@@ -14,8 +14,7 @@
     <p>{{ movies|length }} Titles</p>
     <ul class="movie-list">
         {% for movie in movies %} {# 迭代 movies 变量 #}
-        <li>{{ movie.title }} - {{ movie.year }}</li> {# 等同于
-movie['title'] #}
+        <li>{{ movie.title }} - {{ movie.year }}</li> {# 等同于movie['title'] #}
         {% endfor %} {# 使用 endfor 标签结束 for 语句 #}
     </ul>
     <img alt="Walking Totoro" class="totoro" src="{{ url_for('static', filename='images/totoro.gif') }}">
